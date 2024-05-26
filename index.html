@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Blog Card Solution</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *, *::after {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(255, 233, 39);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 100vh;
+    }
+
+    .content-wrapper {
+      width: 30vw;
+
+      border: 3px black solid;
+      border-radius: 15px;
+
+      box-shadow: 5px 5px black;
+
+      background-color: white;
+
+      padding: 2vw 2vw;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+
+      transition: box-shadow, 0.2s ease-in-out;
+    }
+
+    .content-wrapper:hover {
+      .title {
+        color: rgb(255, 233, 39);
+      }
+
+      box-shadow: 10px 10px black;
+    }
+
+    .image {
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-bottom: 2vh;
+    }
+
+    .main-image {
+      width: 100%;
+
+      border-radius: 15px;
+    }
+
+    @font-face {
+      font-family: Figtree-ExtraBold;
+      src: url("assets/fonts/static/Figtree-ExtraBold.ttf");
+    }
+
+    .status {
+      margin-bottom: 2vh;
+      padding: 0.6vw 0.6vw;
+
+      border-radius: 5px;
+
+      background-color: rgb(255, 233, 39);
+
+      font-family: Figtree-ExtraBold;
+      font-size: 1.1vw;
+    }
+
+    @font-face {
+      font-family: Figtree-Normal;
+      src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+    }
+
+    .date {
+      margin-bottom: 3vh;
+
+      font-family: Figtree-Normal;
+      font-size: 1.75vw;
+    }
+
+    .title {
+      margin-bottom: 3vh;
+
+      font-family: Figtree-ExtraBold;
+      font-size: 2.2vw;
+
+      transition: color, 0.2s ease-in-out;
+    }
+    
+    .text-content {
+      margin-bottom: 3vh;
+
+      color: rgb(92, 92, 92);
+      
+      font-family: Figtree-Normal;
+      font-size: 1vw;
+    }
+
+    .author-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      gap: 1vw;
+    }
+
+    .author-image {
+      width: 3vw;
+    }
+    
+    @font-face {
+      font-family: FigTree-SemiBold;
+      src: url("assets/fonts/static/Figtree-SemiBold.ttf");
+    }
+
+    .author-name {
+      font-family: FigTree-SemiBold;
+      font-size: 0.75vw;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="content-wrapper">
+
+    <div class="image">
+      <img src="/blog-preview-card-main/assets/images/illustration-article.svg" alt="Some sort of image" class="main-image">
+    </div>
+
+    <h3 class="status">Learning</h3>
+
+    <h3 class="date">Published 21 Dec 2023</h3>
+
+    <h1 class="title">HTML & CSS foundations</h1>
+
+    <p class="text-content">
+      These languages are the backbone of every website, defining structure, content, and presentation.
+    </p>
+
+    <section class="author-info">
+      <img src="assets/images/image-avatar.webp" alt="Greg Hooper" class="author-image">
+      <p class="author-name">Greg Hooper</p>
+    </section>
+  </div>
+</body>
+</html>
